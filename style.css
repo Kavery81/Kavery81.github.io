@@ -1,0 +1,117 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+   
+   }
+   *,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+   :focus,:active{outline: none;}
+   a:focus,a:active{outline: none;}
+   a:link { color: #E3B873; }
+   nav,footer,header,aside{display: block;}
+   
+   html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+   }
+   input,button,textarea{font-family:inherit;}
+   input::-ms-clear{display: none;}
+   button{cursor: pointer;}
+   button::-moz-focus-inner {padding:0;border:0;}
+   a, a:visited{text-decoration: none;}
+   a:hover{text-decoration: none;}
+   img{vertical-align: top;}
+   
+   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+   
+   /*Обнуление*/
+
+   body{
+    background-color: red;
+   }
+header{
+  margin-top: 15px;
+}
+ .container{
+    width: 90%; /*ширина элемента*/
+   background-color: green;
+    padding: 15px; /*внутренний отступ (пространство вокруг элемента)*/
+    margin: 0 auto; /*внешний отступ на всех четырёх сторонах элемента*/
+  }
+ .container:after {
+        content: ""; /*предназначено для вставки генерируемого контента, который первоначально в тексте веб-страницы отсутствует*/
+        display: table; /*определяет тип отображения (display type) элемента, имеющий два основных свойства, определяющих генерацию боксов — внешний тип отображения определяет расположение бокса в схеме потока (flow layout) и внутренний тип отображения определяет расположение дочерних элементов бокса (бокс - это прямоугольная область, являющаяся изображением элемента).*/
+        clear: both; /*указывает, может ли элемент быть рядом с плавающими floating элементами, которые предшествуют ему или должны быть перемещены вниз (очищены) под ними*/
+      }
+ 
+ .logo {
+    float: left; /*указывает, что текущий элемент должен быть изъят из обычного flow (потока) и прижат к левой стороне родительского элемента. Текст и inline элементы будут обтекать такой элемент.*/
+  }
+ nav {
+    float: right;
+  }
+ nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Универсальное свойство, позволяющее определять стиль маркера списка, его положение и изображение, которое будет использоваться в качестве маркера. Устанавливает за одну декларацию следующие свойства (в соответствующем порядке): list-style-type, list-style-position, list-style-image*/
+  }
+ nav li {
+    display: inline-block;}
+ nav a {
+        text-decoration: none; /*Text-decoration. Задает подчеркивание для текста сверху или снизу. Сокращенная запись, которая включает в себя свойства: text-decoration-style, text-decoration-color, text-decoration-line. text-decoration: underline; text-decoration: none; Убирает подчеркивание текста.*/
+        line-height: 38px;
+      }
+     
+      #navigation {
+        margin: 0 auto;
+        background: #FE9798;
+        width: 90%;
+        height: 25px;
+   }
+   #text {  width: 90%;
+    margin: 0 auto;
+    height: 280px;
+  
+    background-color: green;
+   }
+
+   #sidebar {
+    
+     background: #40E0D0;
+     float: left;
+        width: 20%;
+        height: 280px;
+   }
+   
+   #content {
+        background: #DCDCDC; /*при назначении widh 100% ничего не меняется*/
+        height: 280px;
+        }
+    
+   #clear {
+        clear: both;
+   }
+    
+   #footer {
+       margin: 0 auto;
+       background: #00BFFF;
+       width: 90%;
+       height: 40px;
+   }
+   
+   
+   
+
