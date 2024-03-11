@@ -45,6 +45,7 @@
 header{
   margin-top: 15px;
 }
+
  .container{
     width: 90%; /*ширина элемента*/
    background-color: green;
@@ -84,7 +85,9 @@ header{
    #text {  width: 90%;
     margin: 0 auto;
     height: 280px;
-  
+    background-size: cover; /* Пропорции изображения сохранены */
+    background-repeat: no-repeat; /* Исключаем повторение */
+    background-position: center; /* Центрируем изображение */
     background-color: green;
    }
 
